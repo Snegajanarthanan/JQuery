@@ -7,3 +7,25 @@
   border: 1px solid black;
   background-color: #ddd;
 }
+
+#Menu .navicon {
+  display: none;
+  font-size: 2em;
+}
+#Menu nav {
+  float: right;
+}
+#Menu nav ul {
+  padding: 0;
+  margin: 0;
+}
+#Menu nav li {
+  float: left;
+  list-style-type: none;
+  border: 1px solid black;
+}
+#Menu nav li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+}
