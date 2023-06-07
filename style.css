@@ -50,6 +50,17 @@
   background-size: cover;
   background-position: center center;
 }
+
+.section h2 {
+  background-color: white;
+  padding: 5px;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section article {
+  background-color: rgba(233, 255, 255, 0.7);
+}
 #home {
   background-image: "https://e0.pxfuel.com/wallpapers/627/591/desktop-wallpaper-better-start-of-a-future-technology-background-portfolio.jpg";
   background-color: aqua;
