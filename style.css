@@ -1,3 +1,6 @@
+#wrapper {
+  max-width: 1200px;
+}
 #header {
   height: 50px;
   width: 100%;
@@ -46,4 +49,20 @@
   border: 1px solid black;
   background-size: cover;
   background-position: center center;
+}
+#home {
+  background-image: "https://e0.pxfuel.com/wallpapers/627/591/desktop-wallpaper-better-start-of-a-future-technology-background-portfolio.jpg";
+  background-color: aqua;
+}
+#about {
+  background-color: lime;
+}
+#services {
+  background-color: cadetblue;
+}
+#portfolio {
+  background-color: crimson;
+}
+#contact {
+  background-color: gold;
 }
