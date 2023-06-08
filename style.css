@@ -1,22 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Mynerve&family=Noto+Sans:ital,wght@1,900&family=Pacifico&family=Roboto+Mono:ital,wght@0,200;1,700&display=swap");
+@import "https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat";
 body,
 html {
   font-family: "Montserrat", sans-serif;
 }
+
 img {
   max-width: 100%;
 }
+
 a {
   text-decoration: none;
+  color: darkblue;
 }
+
 a:hover {
-  text-decoration: underline;
   color: red;
+  text-decoration: underline;
 }
+
 #wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 #header {
   margin: 0 auto;
   max-width: 1200px;
@@ -30,90 +36,125 @@ a:hover {
   background-color: #ddd;
 }
 
-#Menu .navicon {
+#menu .navicon {
   display: none;
   font-size: 2em;
-}
-#Menu nav {
   float: right;
 }
-#Menu nav ul {
+
+#menu nav {
+  float: right;
+}
+
+#menu nav ul {
   padding: 0;
   margin: 0;
 }
-#Menu nav li {
+
+#menu nav li {
   float: left;
   list-style-type: none;
   border: 1px solid black;
 }
-#Menu nav li a {
+
+#menu nav li a {
   display: block;
   text-decoration: none;
   padding: 10px;
   background-color: #222;
   color: #ddd;
 }
-#Menu nav li a:hover {
+
+#menu nav li a:hover {
   background-color: #000;
   color: white;
 }
-#Menu nav li:last-child {
+
+#menu nav li:last-child {
   margin-right: 10px;
 }
+
 .section {
   height: 100vh;
-  min-height: 80px;
+  min-height: 800px;
   overflow: hidden;
   padding-top: 60px;
-  /* position: relative; */
+  /*position: relative;*/
   border: 1px solid black;
   background-size: cover;
   background-position: center center;
 }
 
 .section h2 {
-  font-family: "indie Flower", cursive;
+  font-family: "Indie Flower", cursive;
   background-color: white;
   padding: 5px;
   font-size: 2em;
   text-transform: uppercase;
   text-align: center;
 }
+
 .section article {
-  background-color: rgb(233, 255, 255);
-  background-color: rgba(233, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
   border-radius: 20px;
-  margin: 0 50px;
+  margin: 0 10px;
 }
+
 #home {
-  background-image: "https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png";
-  background-color: aqua;
+  background-image: url("http://lorempixel.com/1200/600/sports");
+  background-color: chartreuse;
 }
+
 #about {
-  background-color: lime;
+  background-image: url("http://lorempixel.com/1200/600/city");
+  background-color: darkmagenta;
 }
+
 #services {
-  background-color: cadetblue;
+  background-color: darkblue;
 }
+
 #portfolio {
-  background-color: crimson;
+  background-color: darkgray;
 }
+
+#portfolio ul li {
+  display: inline-block;
+  width: 48%;
+  min-height: 200px;
+}
+
+#portfolio ul {
+  padding: 10px;
+  list-style-type: none;
+}
+
 #contact {
-  background-color: gold;
+  background-image: url("http://lorempixel.com/1200/600/people");
+  background-color: white;
 }
 
-.navicon {
-  display: none;
-  font-size: 2em;
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 200px;
 }
 
-@media screen and(max-width: 640px) {
-  #Menu .navicon {
+@media screen and (max-width: 640px) {
+  #menu .navicon {
     display: block;
   }
-  #Menu nav {
-    /* display: none; */
+  #menu nav {
+    /* display: none;*/
+    width: 100%;
+  }
+  #menu nav ul li {
+    width: 100%;
+  }
+  #portfolio ul li {
     width: 100%;
   }
 }
