@@ -1,11 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Mynerve&family=Noto+Sans:ital,wght@1,900&family=Pacifico&family=Roboto+Mono:ital,wght@0,200;1,700&display=swap");
+body,
+html {
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: red;
+}
 #wrapper {
   max-width: 1200px;
+  margin: 0 auto;
 }
 #header {
+  margin: 0 auto;
+  max-width: 1200px;
   height: 50px;
   width: 100%;
   position: fixed;
   top: 0px;
+  right: 0px;
   left: 0px;
   border: 1px solid black;
   background-color: #ddd;
@@ -42,6 +61,7 @@
   margin-right: 10px;
 }
 .section {
+  height: 100vh;
   min-height: 80px;
   overflow: hidden;
   padding-top: 60px;
@@ -52,6 +72,7 @@
 }
 
 .section h2 {
+  font-family: "indie Flower", cursive;
   background-color: white;
   padding: 5px;
   font-size: 2em;
@@ -59,10 +80,14 @@
   text-align: center;
 }
 .section article {
-  background-color: rgba(233, 255, 255, 0.7);
+  background-color: rgb(233, 255, 255);
+  background-color: rgba(233, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0 50px;
 }
 #home {
-  background-image: "https://e0.pxfuel.com/wallpapers/627/591/desktop-wallpaper-better-start-of-a-future-technology-background-portfolio.jpg";
+  background-image: "https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png";
   background-color: aqua;
 }
 #about {
@@ -76,4 +101,19 @@
 }
 #contact {
   background-color: gold;
+}
+
+.navicon {
+  display: none;
+  font-size: 2em;
+}
+
+@media screen and(max-width: 640px) {
+  #Menu .navicon {
+    display: block;
+  }
+  #Menu nav {
+    /* display: none; */
+    width: 100%;
+  }
 }
