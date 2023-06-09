@@ -109,6 +109,25 @@
       <footer>
         <p>thanks for visiting copyright</p>
         <p>(c) copyright</p>
+        <p>
+          <form>
+            <div class="row">
+              <label for="Name">Name:</label>
+              <input id="Name" name="Name" type="text" placeholder="Name">
+            </div>
+            <div class="row">
+              <label for="Email">Email:</label>
+              <input id="Email" name="Email" type="email" placeholder="Email">
+            </div>
+            <div class="row">
+              <label for="Message">Message:</label>
+              <textarea id="Message" name="Message" rows="5" cols="40"></textarea>
+            </div>
+            <div class="row">
+              <button type="submit">Send your Message</button>
+            </div>
+          </form>
+        </p>
       </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
@@ -132,6 +151,18 @@
           if ($(".navicon").css("display") == "block") {
             $(".nav").slideUp();
           }
+        });
+
+        $(window).scroll(function () {
+          $(".section").each(function () {
+            var fromTop = $(this).offset().top;
+            if (window.scrollY >= fromTop + 60) {
+              $(this).addClass("fixPoint");
+            } else {
+              $(this).removeClass("fixPoint");
+            }
+            console.log(fromTop);
+          });
         });
       });
     </script>
